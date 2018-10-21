@@ -19,7 +19,8 @@ var db = firebase
   })
   .database();
 var chartsRef = db.ref("charts");
-new Vue({
+
+var app = new Vue({
   el: "#app",
   router,
   data: {
@@ -42,3 +43,4 @@ new Vue({
     }
   }
 });
+export default app;
