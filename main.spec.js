@@ -6,7 +6,7 @@ describe("Vue component tests", () => {
     expect(2).toEqual(2);
   });
 
-  it("An example test should pass.", () => {
-    //expect(App._isVue).toEqual(true);
+  it("App should be a Vue component.", () => {
+    expect(App._isVue).toEqual(true);
   });
 });
