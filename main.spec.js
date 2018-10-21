@@ -5,12 +5,22 @@ describe("Vue component tests", () => {
   it("An example test should pass.", () => {
     expect(2).toEqual(2);
   });
-  it("App should be a Vue component.", () => {
-    //expect(App._isVue).toEqual(true);
+  it("has a created hook", () => {
+    expect(typeof App).toBe("object");
   });
-  it("App localBarData should be an instance of Array.", () => {
-    //expect(App.data.currentRoute).toBeInstanceOf(Array);
+  it("The component should have a data function.", () => {
+    expect(typeof App.data).toBe("function");
+    const defaultData = App.data();
+    // And there should be localCharts.
+    expect(typeof defaultData).toBe("object");
   });
-
-  //localBarData: [["Jan", 4], ["Feb", 2], ["Mar", 10], ["Apr", 5], ["May", 3]],
+  it("There should be local chart data.", () => {
+    const defaultData = App.data();
+    expect(defaultData.localLineData.length).toBe(3);
+    expect(defaultData.localBarData.length).toBe(5);
+  });
+  it("Current chart should be localBarData.", () => {
+    const defaultData = App.data();
+    expect(defaultData.currentChart).toBe("localBarData");
+  });
 });
