@@ -20,7 +20,9 @@ export default {
       localLineData: [["Sun", 32], ["Mon", 46], ["Tue", 28]]
     };
   },
-  methods: {},
+  methods: {
+    updateCurrentChart: function(newChart) {}
+  },
   firebase: {
     charts: {
       source: db.ref("charts"),
