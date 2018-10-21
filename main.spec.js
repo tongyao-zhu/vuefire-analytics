@@ -5,6 +5,9 @@ describe("Vue component tests", () => {
   it("An example test should pass.", () => {
     expect(2).toEqual(2);
   });
+  it("The component should have an updateCurrentChart function.", () => {
+    expect(typeof App.methods.updateCurrentChart).toBe("function");
+  });
   it("has a created hook", () => {
     expect(typeof App).toBe("object");
   });
