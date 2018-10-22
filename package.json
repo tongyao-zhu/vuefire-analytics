@@ -13,6 +13,7 @@
     "vue": "2.5.17"
   },
   "devDependencies": {
+    "jest": "^23.6.0",
     "parcel-bundler": "^1.6.1"
   },
   "keywords": []
