@@ -1,3 +1,4 @@
+import firebase from 'firebase';
 var db = firebase
   .initializeApp({
     databaseURL: "https://awesome-56c60.firebaseio.com"
