@@ -13,7 +13,8 @@
     "vue": "2.5.17"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.6.1"
+    "parcel-bundler": "^1.6.1",
+    "jest": "latest"
   },
   "keywords": []
 }
