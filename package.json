@@ -10,6 +10,7 @@
     "test": "npm run unit"
   },
   "dependencies": {
+    "firebase": "^5.5.5",
     "vue": "2.5.17"
   },
   "devDependencies": {
@@ -19,7 +20,6 @@
     "jest": "^23.6.0",
     "parcel-bundler": "^1.6.1",
     "regenerator-runtime": "^0.12.1",
-    "firebase": "^5.5.5",
     "vue-jest": "^3.0.0"
   },
   "keywords": []
