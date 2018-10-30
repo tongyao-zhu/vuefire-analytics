@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 var db = firebase
   .initializeApp({
     databaseURL: "https://awesome-56c60.firebaseio.com"
@@ -11,6 +11,7 @@ export default {
   data() {
     return {
       currentChart: "localBarData",
+      title: "BT3103 Week 10",
       localBarData: [
         ["Jan", 4],
         ["Feb", 2],
